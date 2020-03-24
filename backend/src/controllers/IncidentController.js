@@ -20,5 +20,24 @@ module.exports ={
         });
 
         return response.json({ id });
+    },
+
+    async delete(request, response) {
+        const { id } = request.params;
+        const ong_id = request.headers.authorization;
+
+        const incident = await connection('incidents')
+            .where('id', id)
+            .select('ong_id')
+            .first();
+
+        // O ind da ong deve ser o mesmo da logada para deletar um caso
+        if (incident.ong_id !== ong_id) {
+            return response.status(401).json({ error: 'Operação não permitida.' });
+        };
+
+        await connection('incidents').where('id', id).delete();
+        // Resposta de sucesso sem conteúdo
+        return response.status(204).send();
     }
 };
