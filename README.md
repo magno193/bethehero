@@ -7,20 +7,31 @@ Projeto da semana Omnistack 11
 
 - Chocolatey
 - NodeJS LTS
+- React
+- React Native
 - Insomnia
-- SQLite
-- Knex
-- SQLite3
-- Crypto
-- CORS
 
 ### Dependências
 
-- Express
-- Nodemon
+Em backend:
 
+- express
+- nodemon
+- knex
+- sqlite3
+- crypto
+- cors
 
-## Guia
+Em frontend:
+
+- react
+- react-dom
+- react-icons (Feather Icons)
+- react-scripts
+- react-router-dom
+- axios (Cliente HTTP)
+
+## Guia de Backend
 
 ### Métodos HTTP
 
@@ -44,11 +55,11 @@ Projeto da semana Omnistack 11
 
 ### Migrations de Knex
 
-- Para executar o pacote knex:          ```npx knex init```
-- Para criar migrations:                ```npx knex migrate:make nome_da_migration```
-- Para listar migrations executadas:    ```npx migrate:status```
-- Para executar migrations:             ```npx knex migrate:latest```
-- Para desfazer ultima migration:       ```npx knex migrate:rollback```
+- Para executar o pacote knex: ```npx knex init```
+- Para criar migrations: ```npx knex migrate:make nome_da_migration```
+- Para listar migrations executadas: ```npx migrate:status```
+- Para executar migrations: ```npx knex migrate:latest```
+- Para desfazer ultima migration: ```npx knex migrate:rollback```
 
 ### Entidades
 
@@ -65,3 +76,38 @@ Projeto da semana Omnistack 11
 - Deletar casos
 - Listar todos os casos
 - Entrar em contato com a ONG
+
+## Conceitos do REACT
+
+### Componente
+
+- Um componente é uma função javascript que retorna HTML.
+
+### JSX
+
+- JSX é a integração de HTML dentro do javascript.
+
+### Propriedade
+
+- Similar ao conceito de atributo de HTML, que possui a mesma sintaxe (como ```id```, ```name``` etc.).
+- Propriedades são atributos que são passados para os componentes.
+
+### Estado
+
+- É uma informação que é mantida por um componente.
+- Utilizado para refletir estados de lógica que mudam para exibir na interface.
+- Utiliza uma variável array com um valor e uma função de alternar estado. Exemplo do uso de estado:
+
+```javascript
+  let [counter, setCounter] = useState(0); // retorna [valor, funcaoDeAtualizacao]
+
+  function increment() {
+    setCounter(counter + 1);
+  }
+
+  return (
+    <div>
+      <Header>Contador: {counter}</Header>
+      <button onClick={increment}>Incrementar</button>
+    </div>
+```
