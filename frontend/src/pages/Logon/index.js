@@ -16,7 +16,7 @@ export default function Logon(props) {
                     <h1>Faça seu logon</h1>
 
                     <input type="text" placeholder="Sua ID"/>
-                    <button>Entrar</button>
+                    <button className="button">Entrar</button>
 
                     <a href="/register">
                         <FiLogIn size={16} color="#E02041"/>
