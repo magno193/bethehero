@@ -111,3 +111,5 @@ Em frontend:
       <button onClick={increment}>Incrementar</button>
     </div>
 ```
+
+## React Native (à atualizar)
