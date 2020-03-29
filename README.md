@@ -10,6 +10,7 @@ Projeto da semana Omnistack 11
 - React
 - React Native
 - Insomnia
+- Expo
 
 ### Dependências
 
@@ -31,7 +32,17 @@ Em frontend:
 - react-router-dom
 - axios (Cliente HTTP)
 
-## Guia de Backend
+Para mobile
+
+- expo-cli
+- expo
+- react-navigation/native
+- react-navigation/stack
+- expo-constants
+- axios
+- intl
+
+## Backend
 
 ### Métodos HTTP
 
@@ -51,7 +62,6 @@ Em frontend:
 - SQL: MySQL, SQLite, PostgreSQL, Oracle, Microsoft SQL Server (Relacional)
 - NoSQL: MongoDB, CouchDB, etc (Não relacional)
 - Query Builder: Knex
-
 
 ### Migrations de Knex
 
@@ -77,7 +87,7 @@ Em frontend:
 - Listar todos os casos
 - Entrar em contato com a ONG
 
-## Conceitos do REACT
+## REACT
 
 ### Componente
 
@@ -96,8 +106,9 @@ Em frontend:
 
 - É uma informação que é mantida por um componente.
 - Utilizado para refletir estados de lógica que mudam para exibir na interface.
-- Utiliza uma variável array com um valor e uma função de alternar estado. Exemplo do uso de estado:
+- Utiliza uma variável array com um valor e uma função de alternar estado.
 
+**Exemplo do uso de estado:**
 ```javascript
   let [counter, setCounter] = useState(0); // retorna [valor, funcaoDeAtualizacao]
 
@@ -112,4 +123,25 @@ Em frontend:
     </div>
 ```
 
-## React Native (à atualizar)
+## React Native
+
+- Para começar um projeto com expo: ```init expo mobile```
+
+### Estrutura mobile
+
+- O React Native não possui a mesmas tags de html, portanto usamos ```div```
+- Qualquer tipo de ```container``` ira utilizar a tag ```View```
+- A tag ```Text``` é utilizada para qualquer tipo de texto
+- A parte de estilização é diferente, é utilizado uma class chamado ```StyleSheet```
+- Todos os elementos do React Native já possuem ```display: flex``` por padrão
+- Variáveis utilizam *CamelCase*
+- Não existe herança de estilos, estilização por elemento
+
+### Pacotes para instalar
+
+- ```expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view```
+- ```yarn add @react-navigation/native```
+- ```yarn add @react-navigation/stack```
+- ```expo install expo-constants```
+- ```expo install expo-mail-composer```
+- ```yarn add intl```
