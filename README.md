@@ -22,6 +22,9 @@ Em backend:
 - sqlite3
 - crypto
 - cors
+- celebrate - joi com express
+- jest
+- cross-env
 
 Em frontend:
 
@@ -145,3 +148,43 @@ Para mobile
 - ```expo install expo-constants```
 - ```expo install expo-mail-composer```
 - ```yarn add intl```
+
+## Funcionalidades avançadas
+
+### Validação backend
+
+- ```yarn add celebrate```
+- ```yarn add jest -D```
+- Inicializar jest: ```npx jest --init```
+
+### TDD (Test Driven Development)
+Desenvolvimento baseado em testes
+
+### Jest
+Framework para testes
+
+- Testes unitários
+- Testes de integration
+
+#### Teste de integration
+
+Para realizar requisições com os testes de integration é necessario ter:
+
+- Para ambiente de teste: ```yarn add cros-env```
+- Para requisições no db: ```yarn add supertest -D```
+
+### Deploy
+
+- Heroku (plano gratuito para testes de desenvolvimento)
+- Digital Ocean (produção)
+- AWS, Google Cloud Platform e Azure (aplicação grande)
+- Netlify para React (aplicação pequena e média)
+- Gerar APK pelo expo (React Native)
+
+## Extras
+
+Para estudar:
+- Redux
+- Padrões de código: ESLint, Prettier
+- Autenticação JWT
+- Styled Components
