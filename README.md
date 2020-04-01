@@ -1,5 +1,5 @@
 # Be the Hero
-Be the Hero é um aplicativo para  cadastro de ONGs que podem cadastrar e listar casos para pessoas realizarem ajuda financeira. É um projeto realizado junto a maratona da Rocketseat na semana Omnistack 11
+Be the Hero é um aplicativo para  cadastro de ONGs que podem cadastrar e listar casos para que pessoas realizem apoio financeiro aos casos cadastrados. É um projeto realizado junto a maratona da Rocketseat na semana Omnistack 11
 
 ## Configuração
 
